@@ -14,7 +14,7 @@ void main() {
       .addHandler(createStaticHandler('bin/files',
           defaultDocument: 'index.html'));
 
-  io.serve(handler, 'localhost', 8080).then((server) {
+  io.serve(handler, InternetAddress.ANY_IP_V4, 8080).then((server) {
     print('Serving at http://${server.address.host}:${server.port}');
   });
 }
