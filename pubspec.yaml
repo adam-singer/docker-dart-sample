@@ -1,0 +1,8 @@
+name: shelf_docker_sample
+author: Kevin Moore <github@j832.com>
+description: Static file server support for Shelf
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  shelf: '>=0.5.3 <0.6.0'
+  shelf_static: any
